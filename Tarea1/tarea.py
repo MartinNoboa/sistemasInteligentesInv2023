@@ -46,6 +46,11 @@ def askQuestions(index):
     SUM += questions[index][1] if answer == 'y' else nothing()
     
 def isLemon():
+    """ 
+    add bias value and print if the fruit is a lemon or not based onn SUM value
+    @param 
+    @return  
+    """
     global SUM, BIAS
     print(SUM)
     SUM += BIAS
@@ -55,7 +60,12 @@ def isLemon():
     else:
         print("It's not a lemon")
 
-def main():    
+def main():   
+    """ 
+    call necessary functions for the program
+    @param
+    @return  
+    """ 
     print("Welcome")
     print("Answer with 'y' for yes and 'n' for no.")
     for i in range(len(questions)):
